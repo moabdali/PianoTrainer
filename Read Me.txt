@@ -1,0 +1,27 @@
+Thanks for trying out Piano Trainer.  The objective of this program/game is to train your fingers to learn what keys on a piano correspond to what notes.  The game will show you a letter and number such as F5, which means you need to hit the corresponding key on your piano (in this case it would be the fifth octave for F).  
+
+What you'll need:
+
+- python (recommend python 32 bit 3.8.2)
+- install pygame (hint: run "py -m pip install -U pygame --user" on a cmd prompt, without quotes)
+- connect a MIDI piano before starting the program
+
+Usage: simply run Piano.py and do what it says
+
+
+
+v 0.1 (5/7/2020)
+	- created the initial idea for the game
+	- used public code from https://audiodestrukt.wordpress.com/2013/06/23/midi-programming-in-python/ to set up the initial reading from the midi device
+	- game can successfully detect inputs correctly from keys A1 to G4#
+	- game can successfully ask you to hit a random note from A1 to G4# via console
+	- game shows a message when you succeed in hitting a correct note and a message when you hit the wrong note
+	TODO:
+	- create a gui/window based output
+	- create a system that shows a sheet music note equivalent
+	- accept/request multiple keys at the same time
+	- show a cascading system that shows what notes are coming up next (for playing real music)
+	- create a system that allows you to import music via text files
+	- regarding the previous requirement: create another program that lets you CREATE the music files from the midi keyboard
+
+
