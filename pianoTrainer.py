@@ -113,8 +113,10 @@ def intToKey(randomKey):
 
 
 
-wWidth = 100 # height of the window, used with TK
-wHeight = 3
+wWidth = 4000 # width of the window, used with TK
+wHeight = 100
+errWidth = 50
+errHeight = 3
 
 
 random.seed() # random is used to generate a number for the keypress game
@@ -129,14 +131,29 @@ while True:
         randomKey = random.randint(21,109) #21 to 109 is used for the keys on piano
         stringToShow = "HIT: "+(str)(randomKey) #what button the game wants you to hit
         testKey = intToKey(randomKey)
+
+
+        testKey = "C4"
+        randomKey = 60
+
+        
+        notePic = tk.PhotoImage(file=testKey+".gif")
+        #w1 = tk.Label(window, image=notePic).pack(side="left")
+        
+
+        
         message = tk.Label(
+                
                 text= testKey,
-                font =  ("Helvetica",30),
-                foreground = "white",
+                font =  ("Helvetica",90),
+                foreground = "green",
                 background = "black",
                 width = wWidth,
-                height = wHeight)
-        message.pack() #required to show the message in the window
+                height = wHeight,
+                compound = tk.CENTER,
+                image = notePic,
+                ).pack()
+        #message.pack() #required to show the message in the window
         window.update()
         
         while True:
@@ -153,6 +170,7 @@ while True:
                                 window.destroy()
                                 window = tk.Tk()
                                 window.wm_attributes("-fullscreen", True)
+                                
                                 break
                         else:
                                 if(inputRead[0][0][2]!=0):
@@ -161,8 +179,9 @@ while True:
                                                 text = stringToShow,
                                                 foreground = "white",
                                                 background = "red",
-                                                width = wWidth,
-                                                height = wHeight)
+                                                width = errWidth,
+                                                height = errHeight,
+                                                font =  ("Helvetica",25))
                                         message.pack()
                                         
              # wait 10ms - this is arbitrary, but wait(0) still resulted
