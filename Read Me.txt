@@ -25,3 +25,13 @@ v 0.1 (5/7/2020)
 	- regarding the previous requirement: create another program that lets you CREATE the music files from the midi keyboard
 
 
+v 0.2 (5/7/2020)
+	- added a window system
+	- all keys are now available
+	- more comments added to code
+	TO DO:
+	- create a system that shows a sheet music note equivalent
+	- accept/request multiple keys at the same time
+	- show a cascading system that shows what notes are coming up next (for playing real music)
+	- create a system that allows you to import music via text files
+	- regarding the previous requirement: create another program that lets you CREATE the music files from the midi keyboard
