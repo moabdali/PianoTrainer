@@ -41,3 +41,12 @@ v 0.3 (5/7/2020)
 	- now shows a picture of a note
 	Immediate TODO for next commit:
 		- create all 88 sheet music notes
+
+v 0.4 (5/8/2020)
+	- resized note, skips the first few and last few as they are way too long and won't be used realistically
+	- all 88 notes applied
+	TODO:
+	- accept/request multiple keys at the same time
+	- show a cascading system that shows what notes are coming up next (for playing real music)
+	- create a system that allows you to import music via text files
+	- regarding the previous requirement: create another program that lets you CREATE the music files from the midi keyboard

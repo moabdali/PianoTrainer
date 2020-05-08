@@ -114,9 +114,9 @@ def intToKey(randomKey):
 
 
 wWidth = 4000 # width of the window, used with TK
-wHeight = 100
-errWidth = 50
-errHeight = 3
+wHeight = 600
+errWidth = 30
+errHeight = 2
 
 
 random.seed() # random is used to generate a number for the keypress game
@@ -124,26 +124,16 @@ window = tk.Tk() # main window used to display game
 window.wm_attributes("-fullscreen", True)
 
 
+
 # run the event loop
 while True:
 
         window.update() #need this to make sure window doesn't disappear
-        randomKey = random.randint(21,109) #21 to 109 is used for the keys on piano
-        stringToShow = "HIT: "+(str)(randomKey) #what button the game wants you to hit
+        randomKey = random.randint(21,108) #21 to 108 is used for the keys on piano
+        
         testKey = intToKey(randomKey)
-
-
-        testKey = "C4"
-        randomKey = 60
-
-        
-        notePic = tk.PhotoImage(file=testKey+".gif")
-        #w1 = tk.Label(window, image=notePic).pack(side="left")
-        
-
-        
+        notePic = tk.PhotoImage(file=testKey+".gif") 
         message = tk.Label(
-                
                 text= testKey,
                 font =  ("Helvetica",90),
                 foreground = "green",
@@ -154,7 +144,7 @@ while True:
                 image = notePic,
                 ).pack()
         #message.pack() #required to show the message in the window
-        window.update()
+        
         
         while True:
                 window.update()
