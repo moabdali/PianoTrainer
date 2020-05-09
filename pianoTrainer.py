@@ -132,7 +132,7 @@ while True:
         randomKey = random.randint(21,108) #21 to 108 is used for the keys on piano
         
         testKey = intToKey(randomKey)
-        notePic = tk.PhotoImage(file=testKey+".gif") 
+        notePic = tk.PhotoImage(file="./imgs/"+testKey+".gif") 
         message = tk.Label(
                 text= testKey,
                 font =  ("Helvetica",90),
