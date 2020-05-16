@@ -50,3 +50,18 @@ v 0.4 (5/8/2020)
 	- show a cascading system that shows what notes are coming up next (for playing real music)
 	- create a system that allows you to import music via text files
 	- regarding the previous requirement: create another program that lets you CREATE the music files from the midi keyboard
+
+V 0.5 (5/16/2020)
+- Major overhaul, uses pygame window now for better output
+- Temporarily removed pictures of notes; considering adding SVG generated graphics for better notes
+- Game now tells you which way to aim for if you miss a note
+- Shows you a piano on the bottom
+- Game shows what note you pressed on the piano
+- Multiple files for easier readability
+- Todo (in addition to previous todos:
+		- add a score system with bonus points for streaks
+		- reimplement graphics
+		- cascading notes
+		- input
+		- multiple notes
+		- output
